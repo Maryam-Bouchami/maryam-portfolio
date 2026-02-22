@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #fafafa;
+  color: #111827;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.teal {
+  color: #14b8a6;
+}
+
+.orange {
+  color: #f97316;
+}
+
+.bg-teal-light {
+  background-color: #f0fdfa;
+}
+
+.bg-teal {
+  background-color: #14b8a6;
+}
+
+.bg-orange {
+  background-color: #f97316;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 1000;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+}
+
+.logo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #14b8a6;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  color: #14b8a6;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #0d9488;
+}
+
+/* Hero/About */
+.hero {
+  padding-top: 140px; /* espace pour navbar fixe */
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.photo-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.photo-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  opacity: 0.8;
+}
+
+/* Plus de styles viendront au fur et à mesure */
