@@ -84,41 +84,140 @@ a {
   color: #0d9488;
 }
 
-/* Hero/About */
-.hero {
-  padding-top: 140px; /* espace pour navbar fixe */
-  padding-bottom: 80px;
+/* Hero section */
+.hero-section {
+  padding: 120px 0 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-label {
+  color: #14b8a6;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.photo-container {
-  position: relative;
+/* Photo block */
+.photo-block {
   width: 100%;
-  max-width: 400px;
-  aspect-ratio: 4 / 5;
-  background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
-  border-radius: 1.5rem;
-  overflow: hidden;
+  max-width: 380px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .photo-placeholder {
-  position: absolute;
-  inset: 0;
+  height: 480px;
+  background: linear-gradient(135deg, #14b8a6 0%, #0f766e 60%, #042f2e 100%);
+  border-radius: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 1.25rem;
-  opacity: 0.8;
+  box-shadow: 0 20px 40px rgba(20, 184, 166, 0.25);
 }
 
-/* Plus de styles viendront au fur et à mesure */
+.placeholder-content {
+  text-align: center;
+  color: white;
+}
+
+.placeholder-icon {
+  margin-bottom: 1rem;
+}
+
+.placeholder-text {
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+
+/* Texte bio */
+.bio-text {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.bio-paragraphs p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive : deux colonnes sur écrans larges */
+@media (min-width: 992px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+
+  .photo-block {
+    width: 40%;
+    max-width: 420px;
+    margin: 0;
+  }
+
+  .bio-text {
+    width: 60%;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+/* Bloc photo – maintenant circulaire */
+.photo-block {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.photo-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* force carré pour cercle parfait */
+  border-radius: 50%; /* rend circulaire */
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #14b8a6 0%,
+    #0f766e 60%,
+    #042f2e 100%
+  ); /* gradient en fond si photo transparente */
+  box-shadow: 0 20px 40px rgba(20, 184, 166, 0.3);
+  border: 6px solid #ffffff; /* bordure blanche optionnelle pour contraste */
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* remplit le cercle sans déformer */
+  display: block;
+}
+
+/* Sur mobile : ajuste la taille */
+@media (max-width: 991px) {
+  .photo-wrapper {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
