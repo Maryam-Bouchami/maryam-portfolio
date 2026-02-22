@@ -1,4 +1,6 @@
 // src/components/Hero.tsx
+import Skills from "./Skills"; // ← Import ici
+
 export default function Hero() {
   return (
     <section className="hero-section">
@@ -6,9 +8,9 @@ export default function Hero() {
         <p className="section-label">ABOUT ME</p>
 
         <div className="hero-content">
-          {/* Bloc photo gradient */}
+          {/* Bloc photo */}
           <div className="photo-block">
-            <div className="photo-placeholder">
+            <div className="photo-wrapper">
               <img
                 src="/photo-profile.png"
                 alt="Maryam Bouchami – WordPress & React Developer"
@@ -17,7 +19,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Texte */}
+          {/* Texte + Skills juste en dessous */}
           <div className="bio-text">
             <h1 className="hero-title">
               Developer by craft,
@@ -42,6 +44,9 @@ export default function Hero() {
                 human insight to each project I take on.
               </p>
             </div>
+
+            {/* ← Ici on appelle le composant Skills */}
+            <Skills />
           </div>
         </div>
       </div>

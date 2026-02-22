@@ -1,5 +1,7 @@
+// src/App.tsx
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 import "./styles/global.css";
 
 function App() {
@@ -7,7 +9,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      {/* Les autres sections viendront ici plus tard */}
+
+      {/* Les autres sections viendront ici */}
     </div>
   );
 }

@@ -175,8 +175,7 @@ a {
   }
 
   .bio-text {
-    width: 60%;
-    text-align: left;
+    text-align: left; /* ou center sur mobile si tu veux */
   }
 
   .hero-title {
@@ -219,5 +218,72 @@ a {
   .photo-wrapper {
     max-width: 280px;
     margin: 0 auto;
+  }
+}
+
+/* Skills section */
+.skills-section {
+  padding: 80px 0;
+  background-color: #ffffff; /* ou #f9fafb si tu veux un fond très clair */
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 3rem;
+}
+
+.skills-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skills-row {
+  justify-content: flex-start;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 9999px; /* ovale parfait */
+  white-space: nowrap;
+}
+
+.skills-wrapper {
+  margin-top: 2.5rem; /* 40px environ – ajuste si tu veux plus/moins d'espace */
+}
+
+/* Teal pour compétences techniques */
+.teal-tag {
+  background-color: #e6fffa; /* teal très clair */
+  color: #0f766e; /* teal foncé pour texte */
+  border: 1px solid #99f6e4; /* bordure subtile teal */
+}
+
+/* Orange pour psychologie/langues */
+.orange-tag {
+  background-color: #fff7ed; /* orange très clair */
+  color: #c2410c; /* orange foncé pour texte */
+  border: 1px solid #fed7aa; /* bordure subtile orange */
+}
+
+/* Responsive : sur mobile, tags plus petits et plus serrés */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skill-tag {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .skills-row {
+    gap: 0.8rem 1rem;
+    justify-content: center;
   }
 }
