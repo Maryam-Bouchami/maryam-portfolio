@@ -24,24 +24,29 @@ export default function Hero() {
             <h1 className="hero-title">
               Developer by craft,
               <br />
-              psychologist by training.
+              psychology enthusiast by passion.
             </h1>
 
             <div className="bio-paragraphs">
               <p>
-                Hi! I'm Maryam, a WordPress Developer with a foundation in React
-                JS, based in Tunis. I design and build high-performance web
-                solutions with a strong focus on user experience and clean code.
+                Hi! I'm Maryam, a WordPress Developer with a strong foundation
+                in React JS, based in Tunis. I design and build high-performance
+                web solutions with a sharp focus on user experience and clean
+                code.
               </p>
+
               <p>
-                My background in psychology gives me a unique perspective — I
-                understand how people think, interact, and navigate digital
-                environments, which helps me anticipate user needs and behaviors
-                at every stage of development.
+                Psychology is my second specialty and my true passion — holding
+                a Bachelor's degree in Psychology, I use this background to
+                deeply understand how people think, interact, and feel in
+                digital spaces. This insight helps me create more intuitive,
+                empathetic, and human-centered interfaces.
               </p>
+
               <p>
-                Currently working at Psynapse, I bring both technical rigor and
-                human insight to each project I take on.
+                Currently working at Psynapse, I combine technical precision
+                with deep human understanding to deliver projects that are not
+                only functional, but truly meaningful.
               </p>
             </div>
 
