@@ -67,7 +67,7 @@ export default function Contact() {
 
         <footer className="contact-footer">
           <p>
-            Designed & Built with ♥ by Maryam Bouchami ©2025 •
+            Designed & Built with ♥ by Maryam Bouchami ©2026 •
             <a href="mailto:maryambouchami@gmail.com">
               maryambouchami@gmail.com
             </a>

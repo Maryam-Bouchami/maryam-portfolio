@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Mood-trackV1",
     description:
-      "Application de suivi d'humeur quotidienne avec React et JavaScript pur. Interface simple pour tracker émotions et tendances.",
+      "Daily mood tracker app built with React and vanilla JavaScript. Clean and simple UI to log emotions daily and visualize mood trends.",
     image: "/projects/mood-react-v1.png",
     link: "https://mood-track-react.vercel.app/", // ← mets ton VRAI lien
     tags: ["React.js", "JavaScript", "UI/UX"],
@@ -13,15 +13,14 @@ const projects = [
   {
     title: "Mood-reactV2",
     description:
-      "Version avancée du Mood Tracker en React + TypeScript. Types stricts, meilleure structure, graphiques et filtres.",
+      "Mood Tracker versions built with React + TypeScript. Different styles but with the exact same features.",
     image: "/projects/mood-react-v2.png",
     link: "https://mood-track-react-typescript-project-blush.vercel.app/", // ← ton VRAI lien
     tags: ["React.js", "TypeScript", "State Management"],
   },
   {
     title: "Quiz App",
-    description:
-      "Application de quiz interactive en React JS. Gestion questions, scoring temps réel, timer et design responsive.",
+    description: "Interactive quiz app built with React JS.",
     image: "/projects/quiz-app.png",
     link: "https://quiz-app-react-woad-tau.vercel.app/", // ← ton VRAI lien
     tags: ["React.js", "Interactive", "Quiz"],
@@ -29,7 +28,7 @@ const projects = [
   {
     title: "Resume with React",
     description:
-      "Site CV personnel et portfolio dynamique en React JS. Mise en page moderne, responsive et facile à maintenir.",
+      "Personal resume site built with React JS. Modern, responsive design that's easy to maintain.",
     image: "/projects/react-cv.png",
     link: "https://react-resume-henna.vercel.app/", // ← ton VRAI lien
     tags: ["React.js", "Portfolio", "Responsive"],
